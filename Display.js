@@ -1,5 +1,5 @@
 class Display {
-    constructor(displayActual, displayAnterior) {
+    constructor(displayAnterior, displayActual) {
         this.displayActual = displayActual;
         this.displayAnterior = displayAnterior;
         this.calculador = new Calculadora();
@@ -7,7 +7,15 @@ class Display {
         this.valorAnterior = "";
     }
     agregarNumero(numero){
-        this.numeroActual = numero
+        this.valorActual = numero;
+        this.imprimirValores();
     }
+    imprimirValores(){        
+        this.displayActual.textContent = this.valorActual;
+        this.displayAnterior.textContent = this.valorAnterior;
+       
+    }
+    
 }
+
 

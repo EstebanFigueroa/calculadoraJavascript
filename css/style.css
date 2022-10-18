@@ -54,6 +54,7 @@ button:focus{
     justify-content: space-between;
     word-break: break-all;
     border: double rgba(0, 0, 0, 0.542);
+    color: #fff;
 }
 .col-2{
     grid-column: span 2;
